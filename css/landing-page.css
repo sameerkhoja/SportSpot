@@ -232,6 +232,7 @@ footer.footer {
 @media (max-width: 812px) {
   html, body {
     overflow-x: hidden;
+    background-color: #0D1B2F;
   }
   body {
     position: fixed;
