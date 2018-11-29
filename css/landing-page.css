@@ -7,7 +7,11 @@
 
  @font-face {
   font-family: "Apercu";
-  src: url("fonts/Apercu_Regular.otf") format("opentype");
+  src: url('apercu_regular-webfont.eot'); /* IE9 Compat Modes */
+src: url('apercu_regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/apercu_regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+     url('fonts/apercu_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+     url('fonts/apercu_regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 body {
