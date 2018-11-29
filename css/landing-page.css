@@ -109,25 +109,11 @@ header.masthead {
   height: 100vh;
 }
 
+
 input[type=email] {
-  padding-bottom: 9px;
-  background-color: #000;
   width: 385px;
   height: 41px;
-  background: #fff;
-  font-size: 18px;
-  box-shadow: inset -1px -1px 10px 0 rgba(0,0,0,.5);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  margin-left: 84px;
-  line-height: 57px;
 }
-
-_::-webkit-full-page-media, _:future, :root input[type=email] {
-  padding-top: 0px;
-  line-height: 41px !important;
-}}
 
 input[type='text']::-webkit-input-placeholder {
   line-height: 57px;
@@ -135,34 +121,15 @@ input[type='text']::-webkit-input-placeholder {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  width: 276px;
   height: 57px;
-  color: #CED0D4;
-  font-size: 18px;
-  font-family: 'apercuregular';
-  font-weight: normal;
-  line-height: 57px;
-  vertical-align: middle;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  width: 276px;
   height: 57px;
-  color: #CED0D4;
-  font-size: 18px;
-  font-family: 'apercuregular';
-  font-weight: normal;
-  line-height: 57px;
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  width: 276px;
   height: 57px;
-  color: #CED0D4;
-  font-size: 18px;
-  font-family: 'apercuregular';
-  font-weight: normal;
-  line-height: 57px;
 }
 
 header.masthead .overlay {
@@ -185,7 +152,6 @@ header.masthead h1 {
 }
 
 .email-bar {
-    margin-left: 9em !important;
     margin-top: 36px;
 }
 
@@ -216,15 +182,12 @@ footer.footer {
 }
 
 .success {
-  width: 500px;
+  width: 100%;
   height: 42px;
-  color: #fff;
   font-size: 18px;
-  font-family: 'apercuregular';
-  font-weight: mono;
-  text-align: left;
-  margin-left: 84px;
-  margin-top: 30px;
+  font-family: apercuregular;
+  text-align: center;
+  margin-top: 19px;
   visibility: hidden;
 }
 
@@ -272,7 +235,7 @@ footer.footer {
     margin: auto;
   }
   .sign-up-button {
-      width: 253px;
+      width: 284px;
       height: 57px;
       background: #549eff;
       color: #fff;
