@@ -4,28 +4,101 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
-body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+ @font-face {
+  font-family: "Apercu";
+  src: url("fonts/Apercu_Regular.otf") format("opentype");
 }
 
-h1,
-h2,
+body {
+  font-family: 'Apercu', Arial, sans-serif;
+}
+
+h1 {
+  width: 453px;
+  height: 117px;
+  color: #FFFFFF;
+  font-size: 86px !important;
+  font-family: Apercu-Bold;
+  font-weight: bold;
+  margin: auto;
+}
+h2 {
+  width: 692px;
+  height: 84px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: Apercu-Regular;
+  font-weight: normal;
+  text-align: center;
+  margin: auto;
+  margin-top: -5.6em;
+  margin-bottom: 1em;
+}
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Apercu', Arial, sans-serif;
   font-weight: 700;
 }
 
 header.masthead {
   position: relative;
-  background: #152C4D;
+  background: #0D1B2F;
   /* background: url("../img/bg-masthead.jpg") no-repeat center center; */
   background-size: cover;
-  padding-top: 8rem;
+  padding-top: 6rem !important;
   padding-bottom: 8rem;
+}
+
+input[type=email] {
+  background-color: #000;
+  width: 511px;
+  height: 60px;
+  background: #FFFFFF;
+  box-shadow: inset -1px -1px 10px 0 rgba(0,0,0,0.50);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  margin-left: -30px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  width: 276px;
+  height: 34px;
+  color: #CED0D4;
+  font-size: 28px;
+  font-family: Apercu-Regular;
+  font-weight: normal;
+  letter-spacing: 1.17px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  width: 276px;
+  height: 34px;
+  color: #CED0D4;
+  font-size: 28px;
+  font-family: Apercu-Regular;
+  font-weight: normal;
+  letter-spacing: 1.17px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  width: 276px;
+  height: 34px;
+  color: #CED0D4;
+  font-size: 28px;
+  font-family: Apercu-Regular;
+  font-weight: normal;
+  letter-spacing: 1.17px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  width: 276px;
+  height: 34px;
+  color: #CED0D4;
+  font-size: 28px;
+  font-family: Apercu-Regular;
+  font-weight: normal;
+  letter-spacing: 1.17px;
 }
 
 header.masthead .overlay {
@@ -52,8 +125,40 @@ header.masthead h1 {
   }
 }
 
+.title-shadow {
+  color: #549EFF !important;
+  margin-right: 331px;
+  margin-bottom: 2px;
+}
+
+.title {
+  position: relative;
+  top: -163px;
+}
+
+.email-bar {
+    margin-left: 9em !important;
+}
+
 .sign-up-button {
-  background-color: #549EFF;
+  width: 329px;
+  height: 60px;
+  background: #549EFF;
+  color: #FFFFFF;
+  border-color: #000000 !important;
+  font-size: 28px;
+  font-family: Apercu-Regular;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1.17px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.mock-up-picture {
+  width: 833px;
+  margin-top: 112px;
 }
 
 footer.footer {
