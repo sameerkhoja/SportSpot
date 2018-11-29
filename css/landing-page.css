@@ -233,7 +233,7 @@ footer.footer {
     overflow-x: hidden;
   }
   body {
-    position: relative;
+    position: fixed;
   }
   header.masthead h1 {
     font-size: 12vw !important;
