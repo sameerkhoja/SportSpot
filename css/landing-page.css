@@ -250,6 +250,8 @@ footer.footer {
     -moz-border-radius: 5px;
     border-radius: 5px;
     margin: auto;
+    padding-top: 0;
+    /* padding-bottom: 0; */
   }
   .sign-up-button {
       width: 253px;
