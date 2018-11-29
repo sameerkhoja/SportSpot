@@ -14,29 +14,32 @@ src: url('apercu_regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE
      url('fonts/apercu_regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
+html {
+  overflow: hidden;
+}
 body {
   font-family: 'Apercu', Arial, sans-serif;
 }
 
 h1 {
   width: 453px;
-  height: 117px;
+  height: 3.5em;
   color: #FFFFFF;
-  font-size: 86px !important;
+  font-size: 6vw !important;
   font-family: Apercu-Bold;
   font-weight: bold;
   margin: auto;
 }
 h2 {
   width: 692px;
-  height: 84px;
+  height: 58px;
   color: #FFFFFF;
   font-size: 32px;
   font-family: Apercu-Regular;
   font-weight: normal;
   text-align: center;
   margin: auto;
-  margin-top: -5.6em;
+  margin-top: -6em;
   margin-bottom: 1em;
 }
 h3,
@@ -50,24 +53,29 @@ h6 {
 header.masthead {
   position: relative;
   background: #0D1B2F;
-  /* background: url("../img/bg-masthead.jpg") no-repeat center center; */
   background-size: cover;
-  padding-top: 6rem !important;
+  padding-top: 3rem !important;
   padding-bottom: 8rem;
+  height: 100vh;
 }
 
 input[type=email] {
+  padding-bottom: 3px;
   background-color: #000;
-  width: 511px;
-  height: 60px;
-  background: #FFFFFF;
-  box-shadow: inset -1px -1px 10px 0 rgba(0,0,0,0.50);
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  margin-left: -30px;
+  width: 474px;
+  height: 57px;
+  background: #fff;
+  box-shadow: inset -1px -1px 10px 0 rgba(0,0,0,.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 9px;
+  line-height: 57px;
 }
-
+input[type='text']::-webkit-input-placeholder {
+  line-height: 57px;
+    vertical-align: middle;
+}
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   width: 276px;
   height: 34px;
@@ -75,7 +83,8 @@ input[type=email] {
   font-size: 28px;
   font-family: Apercu-Regular;
   font-weight: normal;
-  letter-spacing: 1.17px;
+  line-height: 57px;
+    vertical-align: middle;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   width: 276px;
@@ -84,7 +93,7 @@ input[type=email] {
   font-size: 28px;
   font-family: Apercu-Regular;
   font-weight: normal;
-  letter-spacing: 1.17px;
+  line-height: 57px;
 }
 :-ms-input-placeholder { /* IE 10+ */
   width: 276px;
@@ -93,7 +102,7 @@ input[type=email] {
   font-size: 28px;
   font-family: Apercu-Regular;
   font-weight: normal;
-  letter-spacing: 1.17px;
+  line-height: 57px;
 }
 :-moz-placeholder { /* Firefox 18- */
   width: 276px;
@@ -102,7 +111,7 @@ input[type=email] {
   font-size: 28px;
   font-family: Apercu-Regular;
   font-weight: normal;
-  letter-spacing: 1.17px;
+  line-height: 57px;
 }
 
 header.masthead .overlay {
@@ -119,16 +128,6 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-}
-
 .title-shadow {
   color: #549EFF !important;
   margin-right: 331px;
@@ -136,8 +135,6 @@ header.masthead h1 {
 }
 
 .title {
-  position: relative;
-  top: -163px;
 }
 
 .email-bar {
@@ -146,7 +143,8 @@ header.masthead h1 {
 
 .sign-up-button {
   width: 329px;
-  height: 60px;
+  height: 57px;
+  padding-bottom: 30px;
   background: #549EFF;
   color: #FFFFFF;
   border-color: #000000 !important;
@@ -154,18 +152,84 @@ header.masthead h1 {
   font-family: Apercu-Regular;
   font-weight: normal;
   text-align: center;
-  letter-spacing: 1.17px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    height: 57px;
+}
+::-webkit-input-placeholder { /* Webkit */
+    height: 57px;
+}
+:-ms-input-placeholder { /* IE */
+    height: 57px;
 }
 
 .mock-up-picture {
-  width: 833px;
-  margin-top: 112px;
+  width: 433px;
+  margin-top: 82px;
 }
 
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+@media (max-width: 812px) {
+
+  html {
+    overflow: hidden;
+  }
+  header.masthead h1 {
+    font-size: 12vw!important;
+    width: 100% !important;
+    margin-bottom: 2em !important;
+  }
+  .mock-up-picture {
+    width: 373px;
+    padding-top: 3em;
+  }
+
+  h2 {
+    width: 221px;
+    height: 84px;
+    color: #fff;
+    font-size: 32px;
+    font-family: Apercu-Regular;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    margin-top: -5.6em;
+    margin-bottom: 1em;
+  }
+
+  input[type=email] {
+    background-color: #000;
+    width: 12em;
+    height: 41px;
+    background: #fff;
+    box-shadow: inset -1px -1px 10px 0 rgba(0,0,0,.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-left: -100px;
+}
+
+.sign-up-button {
+    width: 194px;
+    height: 49px;
+    background: #549eff;
+    color: #fff;
+    border-color: #000!important;
+    font-size: 19px;
+    font-family: Apercu-Regular;
+    font-weight: 400;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-left: -77px;
+}
 }
