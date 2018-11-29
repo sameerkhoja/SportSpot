@@ -22,9 +22,23 @@
     <link href="css/landing-page.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
+
+    <script>
+    $(document).ready(function(){
+        $('.signup').on('submit', function() {
+            console.log($(".email-input").val().length);
+            if( $(".email-input").val().length > 0 ) {
+              console.log("setting to visible");
+              $(".success").css("visibility", "visible");
+            }
+        });
+    });
+    </script>
+
     <header class="masthead text-white text-center">
       <div class="overlay"></div>
       <div class="container">
@@ -34,16 +48,19 @@
             <h2>Stop Betting. Start Investing.</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto email-bar">
-            <form>
+            <form class="signup">
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Enter Email Address">
+                  <input type="email" class="form-control form-control-lg email-input" placeholder="Enter Email Address">
                 </div>
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-block btn-lg btn-primary sign-up-button">Get Early Access</button>
                 </div>
               </div>
             </form>
+            <div class="success">
+              Thanks for signing up! We’ll notify you when we launch in December.
+            </div>
           </div>
         </div>
       </div>

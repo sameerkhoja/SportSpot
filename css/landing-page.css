@@ -202,12 +202,25 @@ header.masthead h1 {
 
 .mock-up-picture {
   width: 40vw;
-  margin-top: 76px;
+  margin-top: 10px;
 }
 
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.success {
+  width: 500px;
+  height: 42px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'apercuregular';
+  font-weight: mono;
+  text-align: left;
+  margin-left: 84px;
+  margin-top: 30px;
+  visibility: hidden;
 }
 
 @media (max-width: 812px) {
