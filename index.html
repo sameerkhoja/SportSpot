@@ -27,17 +27,7 @@
 
   <body>
 
-    <script>
-    $(document).ready(function(){
-        $('.signup').on('submit', function() {
-            console.log($(".email-input").val().length);
-            if( $(".email-input").val().length > 0 ) {
-              console.log("setting to visible");
-              $(".success").css("visibility", "visible");
-            }
-        });
-    });
-    </script>
+
 
     <header class="masthead text-white text-center">
       <div class="overlay"></div>
@@ -51,7 +41,7 @@
             <form class="signup">
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg email-input" placeholder="Enter Email Address">
+                  <input type="email" name="Email" class="form-control form-control-lg email-input" placeholder="Enter Email Address">
                 </div>
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-block btn-lg btn-primary sign-up-button">Get Early Access</button>
@@ -72,6 +62,36 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
+    <script>
+      $(document).ready(function(){
+
+        var $form = $('.signup'),
+        url = 'https://script.google.com/macros/s/AKfycbziU7NQ7pwjeo763IdRzlNf7jMMNek_4UUrOW5iSN83xz9Cg6U/exec'
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+        $('.sign-up-button').on('click', function(e) {
+
+          if( $(".email-input").val().length > 0 && $(".email-input").val().match(re)) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+              url: url,
+              method: "GET",
+              dataType: "json",
+              data: $form.serializeObject(),
+              success: function() {
+                $(".success").css("visibility", "visible");
+              }
+            });
+          }
+        });
+      });
+
+
+    </script>
+
+    <script src="css/jquery-3.3.1.min.js"></script>
+    <script src="css/jquery.serialize-object.min.js"></script>
   </body>
 
 </html>
