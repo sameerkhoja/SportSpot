@@ -229,8 +229,11 @@ footer.footer {
 }
 
 @media (max-width: 812px) {
-  html {
-    overflow: hidden;
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
   }
   header.masthead h1 {
     font-size: 12vw !important;
@@ -263,7 +266,7 @@ footer.footer {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    margin-left: -100px;
+    margin: auto;
   }
   .sign-up-button {
       width: 253px;
@@ -278,7 +281,12 @@ footer.footer {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px;
-      margin-left: -101px;
+      margin: auto;
+  }
+
+  .email-bar {
+    margin-left: 0em !important;
+
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
