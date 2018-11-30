@@ -248,6 +248,7 @@ footer.footer {
       border-radius: 5px;
       margin: auto;
       padding-bottom: 9px;
+      margin-top: 2px;
   }
 
   .email-bar {
