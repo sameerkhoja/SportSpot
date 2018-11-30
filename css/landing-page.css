@@ -258,7 +258,7 @@ footer.footer {
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     text-align: center;
-    line-height: 15px;
+    line-height: 30px;
   }
 
   ::-moz-placeholder { /* Firefox 19+ */
