@@ -222,8 +222,7 @@ footer.footer {
     margin-bottom: 1em;
   }
   input[type=email] {
-    padding-top: 1px;
-    line-height: 4em;
+    padding-bottom: 0px;
     background-color: #000;
     width: 14em;
     height: 57px;
@@ -259,7 +258,7 @@ footer.footer {
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     text-align: center;
-    line-height: 41px;
+    line-height: 1px;
   }
 
   ::-moz-placeholder { /* Firefox 19+ */
