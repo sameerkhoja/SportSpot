@@ -78,6 +78,7 @@
               dataType: "json",
               data: $form.serializeObject(),
               success: function() {
+                $(".email-input").val("");
                 $(".success").css("visibility", "visible");
               }
             });
