@@ -152,7 +152,7 @@ header.masthead h1 {
 }
 
 .email-bar {
-    margin-top: 36px;
+    margin-top: 30px;
 }
 
 .sign-up-button {
@@ -253,7 +253,6 @@ footer.footer {
 
   .email-bar {
     margin-left: 0em !important;
-
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
